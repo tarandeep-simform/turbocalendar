@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Button, Text} from 'react-native';
+import {SafeAreaView, StyleSheet, Button, Text, View} from 'react-native';
 import NativeCalendarModule from './moduleschema/NativeCalendarModule';
 
 const App = () => {
@@ -10,6 +10,7 @@ const App = () => {
         title="Click Me!"
         onPress={() => setModuleMessage(NativeCalendarModule.getMessage())}
       />
+      <View style={{height: 20}}/>
       <Text>{moduleMessage}</Text>
     </SafeAreaView>
   );
